@@ -155,40 +155,17 @@
   .contact-line{margin-top:30px;font-size:14px;color:var(--faint);}
   .contact-line span{color:var(--accent-d);}
 
-  footer{background:#121109;color:#8C877B;padding:56px 0 40px;font-size:13px;}
-  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:28px;}
-  .fbrand .nm{font-family:var(--serif);color:var(--paper);font-size:16px;margin-bottom:8px;}
-  .fbrand .nm small{font-family:var(--sans);font-size:12px;color:#8C877B;}
-  .fbrand p{line-height:1.6;max-width:300px;margin-bottom:14px;}
-  .fbrand a{display:inline-block;margin-right:12px;color:var(--accent-d);}
-  .fcol h5{color:var(--paper);font-size:13px;font-weight:600;margin-bottom:12px;letter-spacing:.04em;}
-  .fcol a{display:block;color:#9A958A;padding:4px 0;}
-  .fcol a:hover{color:var(--paper);}
-  .legal{border-top:1px solid rgba(247,244,236,.12);margin-top:34px;padding-top:22px;line-height:1.8;}
-  .legal .co{color:var(--paper);font-weight:600;}
-  .legal .disc{color:#6E6A60;margin-top:12px;max-width:700px;line-height:1.6;}
-  .copy{margin-top:14px;color:#6E6A60;}
-
-  /* compare */
-  .compare{margin-top:40px;border:1px solid var(--line);border-radius:18px;overflow:hidden;}
-  .crow{display:grid;grid-template-columns:1.1fr 1fr 1.2fr;border-top:1px solid var(--line);}
-  .crow:first-child{border-top:none;}
-  .crow > div{padding:16px 20px;font-size:14.5px;}
-  .crow .lbl{font-weight:600;color:var(--ink);background:var(--paper2);}
-  .crow .old{color:var(--soft);}
-  .crow .new{color:var(--ink);background:rgba(219,59,38,.05);font-weight:500;border-left:2px solid var(--accent);}
-  .chead .lbl{background:var(--ink);color:var(--paper);}
-  .chead .old{background:var(--paper2);font-weight:600;color:var(--faint);}
-  .chead .new{background:var(--accent);color:#fff;font-weight:700;border-left:2px solid var(--accent);}
+  footer{background:#121109;color:#8C877B;padding:40px 0;font-size:13px;}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+  footer .disc{max-width:560px;line-height:1.6;}
 
   @media (max-width:880px){
-    .three,.steps,.feat,.start,.fgrid{grid-template-columns:1fr;}
+    .three,.steps,.feat,.start{grid-template-columns:1fr;}
     .duo{grid-template-columns:1fr;}
     .seam{display:none;}
     .hero h1{font-size:38px;}
     h2{font-size:27px;}
     .navlinks{display:none;}
-    .crow > div{padding:11px 12px;font-size:12.5px;}
   }
   @media (prefers-reduced-motion: reduce){
     .reveal{opacity:1;transform:none;transition:none;}
@@ -211,7 +188,7 @@
   <div class="wrap">
     <div class="brand"><svg class="foot" style="color:var(--accent);width:18px;height:18px" viewBox="0 0 20 28"><use href="#fp"/></svg>브랜드 빌딩 카드 게임 <small>in 스탬프투어</small></div>
     <div class="navlinks">
-      <a href="#why">왜 지금</a><a href="#diff">다른 점</a><a href="#how">구조</a><a href="#value">강점</a><a href="#case">사례</a><a href="#contact">문의</a>
+      <a href="#why">왜 지금</a><a href="#how">구조</a><a href="#value">강점</a><a href="#case">사례</a><a href="#contact">문의</a>
     </div>
     <a href="#contact" class="btn accent sm">광고 문의하기</a>
   </div>
@@ -221,9 +198,9 @@
   <div class="wrap">
     <span class="eyebrow"><svg class="foot" viewBox="0 0 20 28"><use href="#fp"/></svg>Phygital Ad Platform · 광고주를 위한 모바일 광고</span>
     <h1>고객이 당신의 브랜드를<br>한 글자씩 직접 완성합니다</h1>
-    <p class="sub">스쳐 지나가는 노출은 이제 그만. 관광객이 전국을 누비며 <span style="color:#fff;font-weight:600;">무작위로 뽑은 카드</span>로 당신의 브랜드명을 한 칸씩 채워 완성하는 동안, 풀네임이 머릿속에 각인됩니다.</p>
+    <p class="sub">스쳐 지나가는 노출은 이제 그만. 관광객이 전국을 누비며 카드를 모아 당신의 브랜드명을 완성하는 동안, 풀네임이 머릿속에 각인됩니다.</p>
     <div class="slotrow" id="slotRow"></div>
-    <div class="slotcap">글자는 럭키드로우로 <b>무작위</b>로 채워집니다 — 이 자리에 <b>당신의 신규 브랜드</b>가 들어갑니다</div>
+    <div class="slotcap">예시 — 이 자리에 <b>당신의 신규 브랜드</b>가 들어갑니다</div>
     <div class="herocta">
       <a href="#contact" class="btn">내 브랜드로 시작하기</a>
       <a href="#how" class="btn ghost">구조 30초 만에 보기</a>
@@ -241,24 +218,6 @@
       <div class="card"><div class="tagk">Dopamine + Farming</div><h3>도파밍 심리</h3><p>모으고 채우는 행위가 주는 쾌감. 사람들은 즐거우면 스스로 모읍니다. 그 자발적 몰입을 당신의 브랜드에 연결합니다.</p></div>
       <div class="card"><div class="tagk">Active Exposure</div><h3>능동적 노출</h3><p>고객이 직접 글자를 조립하며 브랜드를 완성합니다. 흘려보내는 노출과 달리, 참여한 브랜드는 기억에 남습니다.</p></div>
     </div>
-  </div>
-</section>
-
-<section class="sec" id="diff">
-  <div class="wrap reveal">
-    <span class="eyebrow"><svg class="foot" viewBox="0 0 20 28"><use href="#fp"/></svg>무엇이 다른가</span>
-    <h2>‘노출’을 사던 광고에서, ‘각인’을 만드는 광고로</h2>
-    <p class="lead">기존 광고는 사용자가 피하고, 봐도 잊습니다. 이 플랫폼은 사용자가 스스로 브랜드를 완성하게 만들어 기억에 새깁니다. 개념이 다르기에 결과도 다릅니다 — 그래서 처음엔 낯설지만, 한 번 이해하면 대체재가 없습니다.</p>
-    <div class="compare">
-      <div class="crow chead"><div class="lbl">구분</div><div class="old">기존 광고 (배너·검색)</div><div class="new">브랜드 빌딩 카드 게임</div></div>
-      <div class="crow"><div class="lbl">사용자 태도</div><div class="old">수동적 · 회피 대상</div><div class="new">능동적 참여 · 자발적 몰입</div></div>
-      <div class="crow"><div class="lbl">노출 방식</div><div class="old">한 번 보고 지나감</div><div class="new">완성할 때까지 반복 노출</div></div>
-      <div class="crow"><div class="lbl">브랜드 기억</div><div class="old">스쳐 잊힘</div><div class="new">직접 완성 → 풀네임 각인</div></div>
-      <div class="crow"><div class="lbl">채널</div><div class="old">온라인 화면 안</div><div class="new">오프라인 방문 × 디지털 (피지털)</div></div>
-      <div class="crow"><div class="lbl">핵심 가치</div><div class="old">노출 수 · 클릭 수</div><div class="new">각인 + 참여 데이터 + 자발적 바이럴</div></div>
-      <div class="crow"><div class="lbl">광고가 놓이는 순간</div><div class="old">콘텐츠를 방해하는 요소</div><div class="new">여행 · 놀이의 즐거운 순간</div></div>
-    </div>
-    <p class="lead" style="margin-top:24px;">핵심은 단 하나입니다. <b style="color:var(--ink);">고객이 직접 한 글자씩 채워 완성한 브랜드명은, 그냥 본 이름과 비교할 수 없을 만큼 깊게 남습니다.</b> 우리는 노출이 아니라 그 ‘각인’을 팝니다.</p>
   </div>
 </section>
 
@@ -334,7 +293,7 @@
   <div class="wrap reveal">
     <span class="eyebrow"><svg class="foot" viewBox="0 0 20 28"><use href="#fp"/></svg>이렇게 채워집니다</span>
     <h2>직접 채워 보세요</h2>
-    <p class="lead">고객이 카드를 뽑을 때마다 <b style="color:var(--ink)">빈 칸이 무작위로 하나씩</b> 채워집니다. 어느 자리가 채워질지는 운 — 그 기대감이 다시 방문을 부르고, 그 사이 브랜드 풀네임이 각인됩니다. 직접 눌러 보세요.</p>
+    <p class="lead">고객이 카드를 모을 때마다 빈 칸이 한 글자씩 채워집니다. 그 과정에서 브랜드 풀네임이 자연스럽게 각인됩니다.</p>
     <div class="case-box">
       <div class="case-head">
         <div class="ttl">IONIQ 5<small>적용 예시 (구조 설명용)</small></div>
@@ -343,7 +302,7 @@
       <div class="caserow" id="caseRow"></div>
       <div class="pbar"><i id="pbar"></i></div>
       <div class="case-actions">
-        <button class="btn accent" id="collectBtn">카드 한 장 뽑기 (랜덤)</button>
+        <button class="btn accent" id="collectBtn">카드 한 장 더 모으기</button>
         <button class="btn ghost sm" id="resetBtn">처음부터</button>
         <span class="done-msg" id="doneMsg">완성! 고객의 머릿속에 브랜드가 각인되었습니다.</span>
       </div>
@@ -362,47 +321,18 @@
       <div class="s"><div class="n">02</div><h4>캠페인 설계</h4><p>경품·기간·완성 난이도를 목표에 맞게 함께 설계합니다.</p></div>
       <div class="s"><div class="n">03</div><h4>운영 · 리포트</h4><p>참여 데이터와 성과를 받아보며 캠페인을 운영합니다.</p></div>
     </div>
-    <a href="https://business.sabini.app/contact/" class="btn accent" style="font-size:16px;padding:15px 30px;">무료 도입 문의하기</a>
-    <div class="contact-line">문의 <span>thatzit1012@gmail.com</span> · 신청 → 검토 → 승인 → 캠페인 개설</div>
+    <a href="#contact" class="btn accent" style="font-size:16px;padding:15px 30px;">광고 문의하기</a>
+    <div class="contact-line">문의처 자리 — <span>[ 담당자 이메일 / 신청 링크를 여기에 연결하세요 ]</span></div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="fgrid">
-      <div class="fbrand">
-        <div class="nm">브랜드 빌딩 카드 게임 <small>in 스탬프투어</small></div>
-        <p>관광객이 직접 완성하며 브랜드를 각인하는 피지털 모바일 광고 플랫폼.</p>
-        <a href="https://business.sabini.app/contact/">무료 도입 문의 →</a>
-        <a href="https://stamptour.app">스탬프투어 앱 ↗</a>
-      </div>
-      <div class="fcol">
-        <h5>서비스</h5>
-        <a href="#diff">무엇이 다른가</a>
-        <a href="#how">작동 구조</a>
-        <a href="#value">강점</a>
-        <a href="#case">직접 채워보기</a>
-      </div>
-      <div class="fcol">
-        <h5>문의 · 지원</h5>
-        <a href="https://business.sabini.app/contact/">도입 문의하기 ↗</a>
-        <a href="https://business.sabini.app/login/">대시보드 로그인 ↗</a>
-        <a href="mailto:thatzit1012@gmail.com">thatzit1012@gmail.com</a>
-      </div>
-      <div class="fcol">
-        <h5>패밀리 사이트</h5>
-        <a href="https://stamptour.app">스탬프투어 ↗</a>
-        <a href="https://festivalstamp.com">축제스탬프투어 ↗</a>
-        <a href="https://cardfit.co.kr">카드핏 ↗</a>
-        <a href="https://www.thatzit.co.kr">댓츠잇소프트 ↗</a>
-      </div>
+    <div>
+      <div style="font-family:var(--serif);color:var(--paper);font-size:15px;margin-bottom:6px;">브랜드 빌딩 카드 게임 <span style="color:#8C877B;font-family:var(--sans);font-size:12px;">in 스탬프투어</span></div>
+      <div>피지털 모바일 광고 플랫폼</div>
     </div>
-    <div class="legal">
-      <span class="co">댓츠잇소프트 주식회사 (THATZIT SOFT Co., Ltd.)</span><br>
-      대표 김범수 · 사업자등록번호 384-81-01361 · 광주광역시 광산구 무진대로 282, 602호 · thatzit1012@gmail.com
-      <div class="disc">※ 본 페이지의 IONIQ5·GENESIS 등 브랜드명은 서비스 구조 설명을 위한 예시이며, 실제 광고 집행이나 제휴 관계를 나타내지 않습니다.</div>
-      <div class="copy">© 2026 댓츠잇소프트 주식회사 (THATZIT SOFT Co., Ltd.). All rights reserved.</div>
-    </div>
+    <div class="disc">※ 본 페이지의 IONIQ5·GENESIS 등 브랜드명은 서비스 구조 설명을 위한 예시이며, 실제 광고 집행이나 제휴 관계를 나타내지 않습니다.</div>
   </div>
 </footer>
 
@@ -427,13 +357,10 @@
     Array.prototype.forEach.call(row.children,function(s){s.className='slot filled';});
   }
   function animateFill(){
-    var slots=[].slice.call(row.children);
-    var order=slots.map(function(_,i){return i;});
-    for(var x=order.length-1;x>0;x--){var y=Math.floor(Math.random()*(x+1));var t=order[x];order[x]=order[y];order[y]=t;}
-    var k=0;
+    var slots=[].slice.call(row.children), i=0;
     (function step(){
-      if(k<order.length){
-        slots[order[k]].className='slot filled'; k++;
+      if(i<slots.length){
+        slots[i].className='slot filled'; i++;
         timers.push(setTimeout(step,430));
       } else {
         timers.push(setTimeout(next,1900));
@@ -452,37 +379,33 @@
   if(reduce){ fillAll(); }
   else { timers.push(setTimeout(animateFill,500)); }
 
-  /* case interactive (random fill) */
+  /* case interactive */
   var WORD="IONIQ5".split(''), START=2;
   var caseRow=document.getElementById('caseRow');
   var progNum=document.getElementById('progNum');
   var pbar=document.getElementById('pbar');
   var doneMsg=document.getElementById('doneMsg');
   var collectBtn=document.getElementById('collectBtn');
-  var slotsFilled=[];
-  function emptyIdxs(){ var e=[]; slotsFilled.forEach(function(f,i){ if(!f) e.push(i); }); return e; }
-  function fillRandom(){ var e=emptyIdxs(); if(!e.length) return false; slotsFilled[e[Math.floor(Math.random()*e.length)]]=true; return true; }
-  function startCase(){ slotsFilled=WORD.map(function(){return false;}); for(var c=0;c<START;c++){fillRandom();} }
+  var filled=START;
   function renderCase(){
     caseRow.innerHTML='';
     WORD.forEach(function(ch,idx){
       var d=document.createElement('div');
-      d.className='cslot '+(slotsFilled[idx]?'filled':'empty');
+      d.className='cslot '+(idx<filled?'filled':'empty');
       d.textContent=ch;
       caseRow.appendChild(d);
     });
-    var count=slotsFilled.filter(Boolean).length;
-    progNum.textContent=count;
-    pbar.style.width=(count/WORD.length*100)+'%';
-    var done=count>=WORD.length;
+    progNum.textContent=filled;
+    pbar.style.width=(filled/WORD.length*100)+'%';
+    var done = filled>=WORD.length;
     doneMsg.classList.toggle('show',done);
     collectBtn.disabled=done;
     collectBtn.style.opacity=done?'.4':'1';
     collectBtn.style.cursor=done?'default':'pointer';
   }
-  collectBtn.addEventListener('click',function(){ if(fillRandom()) renderCase(); });
-  document.getElementById('resetBtn').addEventListener('click',function(){ startCase();renderCase(); });
-  startCase(); renderCase();
+  collectBtn.addEventListener('click',function(){ if(filled<WORD.length){filled++;renderCase();} });
+  document.getElementById('resetBtn').addEventListener('click',function(){ filled=START;renderCase(); });
+  renderCase();
 
   /* scroll reveal */
   if('IntersectionObserver' in window && !reduce){
